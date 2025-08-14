@@ -195,7 +195,7 @@
     async function bootstrap() {
       try {
         statusEl.textContent = "Loading model…";
-        session = await ort.InferenceSession.create('/MiniLM.onnx');
+        session = await ort.InferenceSession.create('https://mohalhabeeb.github.io/Host/MiniLM.onnx');
 
         statusEl.textContent = "Embedding KB…";
         KB.length = 0;
@@ -230,6 +230,7 @@
   </script>
 </body>
 </html>
+
 
 
 
